@@ -1,5 +1,9 @@
 #!/bin/bash
 
+clear
+
+echo " WARRNING: THIS SCRIPT WILL RUN UNTIL YOU USE CTRL + C TO KILL IT "
+
 prompt_user() {
 	
 	read -p "Hello, please provide me with a filename to search: " check
