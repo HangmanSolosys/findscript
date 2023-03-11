@@ -14,7 +14,7 @@ echo
 
 echo "looking for $check"
 
-
+sleep 1
 
 echo
 
