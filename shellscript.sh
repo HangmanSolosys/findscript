@@ -18,15 +18,16 @@ echo "looking for $check"
 
 echo
 
-where=$(find / -name $check) &>/dev/null
+where=$(find / -name "$check" 2>/dev/null) 
 
 
 
 echo
 
-if [ $? -eq 0 ]; then
+if [ -n "$where" ]; then
 
 	echo "we found the $check file in $where"
+
 
 else
 	echo "Error, file not found"
@@ -37,12 +38,12 @@ echo
 
 }
 
-prompt_user
+
 
 while [ true ] 
 
-do
+	do
 
-prompt_user
+		prompt_user
 
 done
